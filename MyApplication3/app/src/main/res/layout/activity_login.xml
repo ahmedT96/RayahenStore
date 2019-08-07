@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.omar.helpinghand.login">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/whatss" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/editpohone1"
+                android:layout_width="250dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:hint="Phone numper"
+                android:inputType="phone"
+                android:text=""
+
+                android:textSize="24sp"
+
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="11"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/editpassword1"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:text=""
+
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="11"
+
+                app:met_singleLineEllipsis="true" />
+
+            <Button
+                android:id="@+id/btnsign"
+                style="bold"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_login"
+                android:gravity="center"
+                android:onClick="sinin"
+                android:shadowColor="#030"
+                android:text="Sign in"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/btnsignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:onClick="sinup"
+                android:layout_weight="1"
+                android:shadowColor="#030"
+                android:textSize="23dp"
+                android:text="Sign up"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

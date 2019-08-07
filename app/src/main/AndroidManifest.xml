@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rayahen.ryahen">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/fff"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Home"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Product"
+            android:parentActivityName=".Catagory" />
+        <activity
+            android:name=".Catagory"
+            android:parentActivityName=".Home" />
+        <activity android:name=".Product_ditals" />
+        <activity
+            android:name=".Cart"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Favorit"
+            android:parentActivityName=".Home" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB_DUF7MXhd9xjqyC--kEfcGXlQsoHi6aY" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".SignIn" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".Order_history" />
+        <activity android:name=".splach">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Orders"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Branches"
+            android:parentActivityName=".Home" />
+        <activity android:name=".bransh_Ditals" />
+        <activity android:name=".Setting_user" />
+        <activity android:name=".settingActivty" />
+        <activity
+            android:name=".track_dirvaly"
+            android:label="@string/title_activity_track_dirvaly" />
+        <activity
+            android:name=".order_track"
+            android:label="@string/title_activity_order_track" />
+        <activity android:name=".vaildtion"></activity>
+    </application>
+
+</manifest>

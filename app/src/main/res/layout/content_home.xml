@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Home"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:showIn="@layout/app_bar_home"
+    android:weightSum="3">
+
+
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:scaleType="fitXY"
+                android:src="@drawable/p1"
+                android:layout_marginBottom="5dp"
+               />
+
+
+            <LinearLayout
+                android:id="@+id/places"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:layout_marginBottom="5dp"
+                >
+                <ImageView
+                    android:id="@+id/branch2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:onClick="branchView"
+                    android:src="@drawable/p1" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/p1" />
+
+
+                <Button
+                    android:id="@+id/btnsign"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center|right"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/background_login"
+                    android:gravity="center"
+                    android:text="Sign in"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/btnsignUp"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_30sdp"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/btnsign"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:background="@drawable/background_login"
+                    android:gravity="center"
+                    android:text="Sign Up"
+                    android:textColor="#fff" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:onClick="calling"
+                    android:src="@drawable/call" />
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:onClick="instegram"
+                    android:src="@drawable/insta" />
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:onClick="whatsapp"
+                    android:src="@drawable/whats" />
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="right"
+                    android:onClick="facebock"
+
+                    android:src="@drawable/fac" />
+            </LinearLayout>
+
+
+
+</LinearLayout>

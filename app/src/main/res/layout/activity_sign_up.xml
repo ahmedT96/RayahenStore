@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:src="@drawable/logo"
+            tools:ignore="Suspicious0dp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/phone"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.6"
+            android:hint="Name"
+            android:inputType="text"
+            android:text=""
+            android:textSize="24sp"
+            />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/editpohone"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.6"
+                android:hint="Phone numper"
+                android:inputType="phone"
+                android:text=""
+                android:minLines="11"
+                android:textSize="24sp"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="11"
+                app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editpassword"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.6"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:text=""
+            android:textSize="24sp"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="11"
+
+            app:met_singleLineEllipsis="true" />
+
+        <Button
+            android:id="@+id/btnsign"
+            style="bold"
+            android:layout_marginBottom="20dp"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.3"
+            android:background="@drawable/background_login"
+            android:onClick="done"
+            android:shadowColor="#030"
+            android:text="Done" />
+
+</LinearLayout>
+

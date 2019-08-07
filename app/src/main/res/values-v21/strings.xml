@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">RAYAHEN</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="title_activity_maps" translatable="false">Map</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+
+    <!-- Example settings for Data & Sync -->
+
+    <!-- Example settings for Notifications -->
+
+    <string name="title_activity_track_dirvaly" translatable="false">Map</string>
+    <string name="title_activity_order_track" translatable="false">Map</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="favorit">Favorit</string>
+    <string name="order">Order</string>
+    <string name="setting">Setting</string>
+    <string name="addToCart">Item Added To Cart</string>
+    <string name="addtoFav">Item Added To Favorite</string>
+    <string name="remove">Item Removed from Favorite</string>
+    <string name="updaat">Item updated from Cart</string>
+    <string name="favoritEmpty">Your Favorite Is Empty</string>
+    <string name="CartEmpty">Your Cart Is Empty</string>
+    <string name="doneOrder">Your purchase has been successful</string>
+    <string name="track">Track your Order through Track Orders</string>
+    <string name="removedCart">Removed to Cart</string>
+    <string name="compleatedata">Complete your information</string>
+    <string name="call">Please call us to cancel order</string>
+
+    /string>
+</resources>

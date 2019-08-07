@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_login"
+    android:orientation="vertical">
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/city"
+        >
+
+    </Spinner>
+<EditText
+    android:layout_width="200dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    android:hint="رقم العماره"
+    android:id="@+id/bulid"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="رقم الشقه"
+        android:id="@+id/room"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="ملحوظه"
+        android:id="@+id/Communt"/>
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_gravity="center"
+
+        android:background="@color/colorPrimary"
+        android:id="@+id/dons"/>
+
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:id="@+id/clooapsing"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/over"
+            >
+            <ImageView
+                android:id="@+id/item_imag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/p1"
+                app:layout_collapseMode="parallax"/>
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:layout_marginTop="170dp"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/favorit"
+                    android:onClick="fav"
+                    android:layout_gravity="bottom"
+                    app:srcCompat="@drawable/ic_favorite_border_black_24dp"
+                    tools:ignore="OnClick" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="parallax"></android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nestedScoll"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/Item_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="12dp"
+                        android:text="Item name"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <com.xw.repo.BubbleSeekBar
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                         android:id="@+id/qounter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:bsb_bubble_color="@color/colorPrimary"
+                        app:bsb_bubble_text_color="#fff"
+app:bsb_seek_step_section="true"
+                        app:bsb_second_track_color="@color/colorPrimary"
+                        app:bsb_section_count="5"
+                        app:bsb_section_text_position="bottom_sides"
+                        app:bsb_show_progress_in_float="true"
+                        app:bsb_show_section_mark="true"
+                        app:bsb_show_section_text="true"
+                        app:bsb_show_thumb_text="true"
+                        app:bsb_track_color="@color/colorPrimary"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/layout_Price">
+                        <TextView
+                            android:text="Price "
+                            android:textSize="22dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_weight="9"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Item_price1"
+                            android:padding="12dp"
+                            android:text="3000"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            />
+                        <ImageButton
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Addto_carts"
+                            android:padding="12dp"
+                            android:background="#fff"
+                            android:text=""
+                            android:onClick="addtocart"
+                            app:srcCompat="@drawable/ic_add_shopping_cart_black_24dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                           />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Item_descreption1"
+                    android:layout_marginTop="12dp"
+                    android:padding="12dp"
+                    android:text="Item Descreption"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    />
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

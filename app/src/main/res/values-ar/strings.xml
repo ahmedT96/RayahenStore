@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RAYAHEN</string>
+    <string name="favorit">المفضله</string>
+    <string name="order">الطلبات السابقه</string>
+    <string name="setting">الاعدادات</string>
+    <string name="home">الرئيسيه</string>
+    <string name="cart">العربه</string>
+    <string name="addToCart">تم اضافه المنتج الي العربه</string>
+    <string name="addtoFav">تم اضافه المنتج الي المفضله</string>
+    <string name="remove">تم حذف المنتج من المفضله</string>
+    <string name="updaat">تم تحديث المنتج الي العربه</string>
+    <string name="favoritEmpty">المفضله فارغه</string>
+    <string name="CartEmpty">العربه فارغه</string>
+    <string name="doneOrder">تم عمليه الشراء بنجاح</string>
+    <string name="track">تتبع طلبك من خلال الطلبات السابقه</string>
+    <string name="removedCart">تم حذف المنتج</string>
+    <string name="compleatedata">من فضلك اكمل بياناتك</string>
+    <string name="call">رجاء الاتصال بالفرع</string>
+
+
+
+</resources>
